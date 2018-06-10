@@ -13,3 +13,15 @@
 	border-top-width: 1px;
 }
 
+.vitoria {
+	background-color: rgb(25, 193, 0);
+}
+
+.derrota {
+	background-color: rgb(255, 48, 48);
+}
+
+.empate {
+	background-color: rgb(147, 147, 147);
+}
+
