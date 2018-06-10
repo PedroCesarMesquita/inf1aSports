@@ -1,0 +1,25 @@
+.jogadores {
+	border: 2px solid #0073cc;
+	display: inline-block;
+	text-align: center;
+}
+
+img {
+	height: 128px;
+	display: block;
+}
+
+.jogadores > p {
+	color: white;
+	margin: 0;
+	padding: 5px;
+	border-top: 2px solid #0073cc;
+}
+
+.nome {
+	float: left;
+}
+
+.num {
+	float: right;
+}
