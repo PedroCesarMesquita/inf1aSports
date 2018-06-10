@@ -1,42 +1,23 @@
-const partidas = [
-	{ // partidas[0]
-		adversario: 'MEC 1A',
-		golsPro: 4,
-		golsContra: 3
-	},
-	{ // partidas[1]
-		adversario: 'INF 2A',
-		golsPro: 3,
-		golsContra: 4	
-	},
-	{ // partidas[2]
-		adversario: 'MEC 1A',
-		golsPro: 4,
-		golsContra: 4
-	},
-	{ // partidas[3]
-		adversario: 'EST/TT 1A',
-		golsPro: 6,
-		golsContra: 5
-	}
-]
+let partidasEl = document.querySelectorAll('.partidas');
+let campsEl = document.querySelectorAll('.camps');
+let datasEl = document.querySelectorAll('.datas');
 
-let mainEl = document.querySelector('main');
+for(let i = 0; i < partidasEl.length; i++) {
 
-for(let partida of partidas) {
-	let partidaEl = document.createElement('p');
-	partidaEl.classList.add('partidas');
+	let gp = JSON.parse(partidasEl[i].innerText.charAt(7));
+	let gc = JSON.parse(partidasEl[i].innerText.substr(9, 2));
 
-	if(partida.golsPro > partida.golsContra)
-		partidaEl.style.backgroundColor = '#19c100';
+	if(gp > gc) partidasEl[i].style.backgroundColor = 'rgb(25, 193, 0)';
+	else if(gp < gc) partidasEl[i].style.backgroundColor = 'rgb(255, 48, 48)';
+	else partidasEl[i].style.backgroundColor = 'rgb(147, 147, 147)';
 
-	else if(partida.golsPro < partida.golsContra)
-		partidaEl.style.backgroundColor = '#ff3030';
+	partidasEl[i].addEventListener('mouseover', function() {
+		campsEl[i].innerHTML = '<br>' + partidasEl[i].dataset.camp;
+		datasEl[i].innerHTML = '<br>' + partidasEl[i].dataset.data;
+	});
 
-	else
-		partidaEl.style.backgroundColor = '#939393';
-	
-	partidaEl.innerHTML = 'INF 1A ' + partida.golsPro + 'x' + partida.golsContra + ' ' + partida.adversario;
-	mainEl.appendChild(partidaEl);
+	partidasEl[i].addEventListener('mouseout', function() {
+		campsEl[i].innerHTML = '';
+		datasEl[i].innerHTML = '';
+	});
 }
-

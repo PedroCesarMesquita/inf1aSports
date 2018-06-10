@@ -19,10 +19,11 @@ h1 {
 
 header > p {
 	color: #ff9000;
+	margin-bottom: 0;
 }
 
 nav {
-	margin: 0;
+	padding: 10px;
 	background-color: #0073cc;
 	text-align: center;
 }
@@ -38,7 +39,7 @@ nav > a:hover {
 	background-color: #ff9000;
 }
 
-.s-navselect {
+.navselect {
 	background-color: #ff9000;
 }
 
