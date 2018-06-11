@@ -3,6 +3,7 @@
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
+	background-color: #0073cc;
 }
 
 .jogadores > img {
@@ -26,5 +27,5 @@
 }
 
 .num > img {
-	width: 12px;
+	height: 24px;
 }
