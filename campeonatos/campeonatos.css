@@ -1,6 +1,6 @@
 table {
 	border-collapse: collapse;
-	float: left;
+	display: inline-block;
 }
 
 th {
@@ -21,7 +21,11 @@ td {
 	border: 1px solid white;
 }
 
-section {
-	float: right;
-	display: block;
+main {
+	text-align: center;
+}
+
+section > section {
+	margin-left: 50px;
+	display: inline-block;
 }
