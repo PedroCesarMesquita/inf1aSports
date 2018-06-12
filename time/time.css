@@ -1,3 +1,28 @@
+section {
+	background-color: #0073cc;
+	padding: 10px;
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+main {
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	margin: 0;
+}
+
+h3 > span {
+	color: #ff9000;
+}
+
+#foto-jogador {
+	height: 192px;
+	border: 2px solid white;
+}
+
 .jogadores {
 	border: 2px solid #0073cc;
 	display: inline-block;
@@ -12,7 +37,6 @@
 }
 
 .jogadores > p {
-	color: white;
 	margin: 0;
 	border-top: 2px solid #0073cc;
 	padding: 5px;

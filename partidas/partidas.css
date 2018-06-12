@@ -1,27 +1,42 @@
 .partidas {
-	color: white;
 	text-align: center;
-	padding: 5px;
+	padding: 5px 30px;
 	font-family: 'Roboto', sans-serif;
-	border-width: 0 1px 1px 1px;
-	border-style: solid;
-	border-color: black;
 	margin: 0;
 }
 
-#ultima {
-	border-top-width: 1px;
+p.partidas {
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: white;
+	background-color: #0073cc;
+	color: white;
 }
 
-.vitoria {
+h3.partidas {
+	background-color: white;
+	color: #0073cc;
+	border: 1px solid #0073cc;
+}
+
+body {
+	text-align: center;
+}
+
+main {
+	display: inline-block;
+	margin: auto;
+}
+
+.vitoria:hover {
 	background-color: rgb(25, 193, 0);
 }
 
-.derrota {
+.derrota:hover {
 	background-color: rgb(255, 48, 48);
 }
 
-.empate {
+.empate:hover {
 	background-color: rgb(147, 147, 147);
 }
 
