@@ -25,6 +25,14 @@
 	background-color: rgba(255,255,255,0.7);
 	font-family: 'Aldrich', sans-serif;
 }
+header>img{
+	width: 800px;
+	height: 800px;
+}
+h1{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 50px;
+}
 /*NOTICIA CONVOCAÇÃO*/
 #convocacao{
 	height: 400px;
