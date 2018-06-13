@@ -2,43 +2,60 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>INFutebol</title>
-		<link rel="icon" href="../imgs/logo.png">
-		<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+		<title></title>
+		<link rel="stylesheet" href="time.css">
 		<link rel="stylesheet" href="../comum/comum.css">
-		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<header>
-			<h1>INFutebol</h1>
+			<h1>INF 1A Sports</h1>
 			<p></p>
 		</header>
 		<nav>
-			<a href="../main/index.html" class="navselect">Principal</a>
+			<a href="../main/index.html">Principal</a>
 			<a href="../partidas/index.html">Partidas</a>
 			<a href="../campeonatos/index.html">Campeonatos</a>
-			<a href="../time/index.html">Time</a>
+			<a href="../time/index.html" class="navselect">Time</a>
 			<a href="../creditos/index.html">Créditos</a>
 		</nav>
-		<section id="noticias">
-			<article id="uniformes">
-				<div class="conteudo">
-					RETA FINAL!
-				</div>
-				<div class="conteudoDetalhe">
-				Responsáveis pela produção dos unifromes do clube dizem que estão em reta final: "Estamos em reta final
-				</div>
-			</article>
-			<article id="convocacao">
-				<div class="conteudo">
-					CONVOCAÇÃO DE JOGADORES
-				</div>
-				<div class="conteudoDetalhe">
-					A equipe de INF2 convocou jogadores de INF1 para amistoso contra Redes
-				</div>
-			</article>
-		</section>
+		<main>
+			<h2>Jogadores</h2>
+			<section>
+				<h3>ALFACE <span>9</span></h3>
+				<img src="../imgs/alface.jpg" id="foto-jogador">
+				<p id="posicao">Posição: ala</p>
+				<p id="gols">Gols: 1</p>
+			</section>
+			<div class="jogadores" id="jonata">
+				<img src="../imgs/jonata.jpg">
+				<p>
+					<span class="nome">JONATA</span>
+					<span class="num"><img src="../imgs/1.png"></span>
+				</p>
+			</div>		
+			<div class="jogadores" id="alface">
+				<img src="../imgs/alface.jpg">
+				<p>
+					<span class="nome">ALFACE</span>
+					<span class="num"><img src="../imgs/9.png"></span>
+				</p>
+			</div>
+			<div class="jogadores" id="funeco">
+				<img src="../imgs/funeco.jpg">
+				<p>
+					<span class="nome">FUNECO</span>
+					<span class="num"><img src="../imgs/1.png"><img src="../imgs/0.png"></span>
+				</p>
+			</div>
+			<div class="jogadores" id="wagao">
+				<img src="../imgs/wagao.png">
+				<p>
+					<span class="nome">WAGAO</span>
+					<span class="num"><img src="../imgs/6.png"><img src="../imgs/9.png"></span>
+				</p>
+			</div>
+		</main>
+		<script src="time.js"></script>
 		<script src="../comum/comum.js"></script>
-		<script src="main.js"></script>
 	</body>
 </html>
