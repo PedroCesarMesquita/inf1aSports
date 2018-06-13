@@ -4,6 +4,7 @@ let frases = [
 	'Infutebol',
 	'Apenas piadas inforçadas',
 	'Só os ratinf',
+	'Derrotas desinfreadas'
 ]
 
 let pEl = document.querySelector('header > p');
