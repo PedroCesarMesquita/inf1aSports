@@ -43,6 +43,10 @@ h3 > span {
 	padding: 5px;
 }
 
+.jogador-selecionado {
+	border: 2px solid white;
+}
+
 .nome {
 	float: left;
 }
