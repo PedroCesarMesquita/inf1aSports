@@ -29,6 +29,12 @@ let jogadores = [
 		num: '69',
 		posicao: 'ala',
 		gols: 'bastantes'
+	},
+	{
+		nome: 'CHULES',
+		num: '92',
+		posicao: 'fixo',
+		gols: 'alguns'
 	}
 ];
 
