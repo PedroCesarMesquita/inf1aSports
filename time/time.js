@@ -1,10 +1,16 @@
-let jogadorSelecionado = 1;
+let jogadorSelecionado = 2;
 let jogadores = [
 	{
 		nome: 'JONATA',
 		num: '1',
 		posicao: 'goleiro',
 		gols: 0
+	},
+	{
+		nome: 'CEARA',
+		num: '5',
+		posicao: 'fixo',
+		gols: 'alguns'
 	},
 	{
 		nome: 'ALFACE',
@@ -35,6 +41,7 @@ let jogadoresEl = document.querySelectorAll('.jogadores');
 
 for(let i = 0; i < jogadoresEl.length; i++) {
 	jogadoresEl[i].addEventListener('click', function() {
+
 		jogadoresEl[jogadorSelecionado].classList.remove('jogador-selecionado');
 		jogadoresEl[jogadorSelecionado = i].classList.add('jogador-selecionado');
 

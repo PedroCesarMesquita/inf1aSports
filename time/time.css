@@ -6,6 +6,10 @@ section {
 	border-radius: 50px;
 }
 
+section span {
+	color: #ff9000;
+}
+
 main {
 	text-align: center;
 	color: white;
