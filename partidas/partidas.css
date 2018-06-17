@@ -30,7 +30,7 @@ section {
 	margin: auto;
 }
 
-partidas:hover, .partida-selecionada {
+.partidas:hover, .partida-selecionada {
 	background-color: white;
 	color: #0073cc;
 }
