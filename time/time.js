@@ -11,6 +11,11 @@ let jogadores = [
 		gols: 'alguns'
 	},
 	{
+		nome: 'PEDRO',
+		num: '7',
+		gols: 'x'
+	},
+	{
 		nome: 'ALFACE',
 		num: '9',
 		gols: 1
@@ -19,6 +24,11 @@ let jogadores = [
 		nome: 'FUNECO',
 		num: '10',
 		gols: 'muitos'
+	},
+	{
+		nome: 'GABINO',
+		num: '11',
+		gols: 'x'
 	},
 	{
 		nome: 'SOCO',
