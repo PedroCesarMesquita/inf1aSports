@@ -3,45 +3,43 @@ let jogadores = [
 	{
 		nome: 'JONATA',
 		num: '1',
-		posicao: 'goleiro',
 		gols: 0
 	},
 	{
 		nome: 'CEARA',
 		num: '5',
-		posicao: 'fixo',
 		gols: 'alguns'
 	},
 	{
 		nome: 'ALFACE',
 		num: '9',
-		posicao: 'ala',
 		gols: 1
 	},
 	{
 		nome: 'FUNECO',
 		num: '10',
-		posicao: 'atacante',
 		gols: 'muitos'
+	},
+	{
+		nome: 'SOCO',
+		num: '13',
+		gols: 1
 	},
 	{
 		nome: 'WAGAO',
 		num: '69',
-		posicao: 'ala',
 		gols: 'bastantes'
 	},
 	{
 		nome: 'CHULES',
 		num: '92',
-		posicao: 'fixo',
-		gols: 'alguns'
+		gols: 2
 	}
 ];
 
 let h3El = document.querySelector('h3');
 let fotoEl = document.querySelector('#foto-jogador');
-let posicaoEl = document.querySelector('#posicao > span');
-let golsEl = document.querySelector('#gols > span');
+let golsEl = document.querySelector('#gols');
 
 let jogadoresEl = document.querySelectorAll('.jogadores');
 
@@ -53,7 +51,6 @@ for(let i = 0; i < jogadoresEl.length; i++) {
 
 		h3El.innerHTML = jogadores[i].nome + ' <span>' + jogadores[i].num + '</span>';
 		fotoEl.src = '../imgs/' + jogadores[i].nome.toLowerCase() + '.jpg';
-		posicaoEl.innerText = jogadores[i].posicao;
-		golsEl.innerText = jogadores[i].gols;
+		golsEl.innerText = jogadores[i].gols + (jogadores[i].gols == 1 ? ' gol' : ' gols');
 	});
 }
