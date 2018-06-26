@@ -1,12 +1,18 @@
 #noticias{
-	width: 500px;
-	height: 325px;
+	width: 700px;
+	height: 400px;
 	margin: 30px auto;
 	border: 1px solid white;
-}
-#noticias>article{
-	border: 1px dotted white;
+	background-image: url("../imgs/camisas_fundo.png");
+	background-size: cover;
+	transition: all 1s ease;
 	position: relative;
+}
+section>h2{
+	position: absolute;
+	bottom: 15%;
+	margin-left: 350px;/*alterar em js*/
+	font-size: 60px;
 }
 .conteudo{
 	position: absolute;
@@ -23,62 +29,4 @@
 	bottom: 0px;
 	background-color: rgba(255,255,255,0.7);
 	font-family: 'Aldrich', sans-serif;
-}
-
-/*NOTICIA CONVOCAÇÃO*/
-#convocacao{
-	height: 200px;
-	width: 144px;
-	position: relative;
-	left: 350px;
-}
-#convocacao>.conteudo{
-	font-size: 15px;
-	height: 40px;
-}
-#convocacao:hover>.conteudo{
-	display: none;
-}
-#convocacao:hover>.conteudoDetalhe{
-	
-	width: 130px;
-	padding: 20px;
-	background-color: rgba(35,118,252,0.7);
-	font-family: 'Aldrich', sans-serif;
-	font-size: 12.5px;
-	display:block;
-}
-
-/*NOITICIA UNIFORMES*/
-#uniformes:hover{
-	background-image: url("../imgs/camisas_fundo_hover.png");
-	background-size: cover;
-}
-#uniformes{
-	width: 350px;
-	height: 200px;
-	float: left;
-	background-image: url("../imgs/camisas_fundo.png");
-}
-#uniformes>.conteudo{
-	font-size: 25px;
-	height: 30px;
-	width: 310px;
-	padding: 20px;
-}
-#uniformes:hover>.conteudo{
-	display: none;
-}
-#uniformes:hover div{
-	display: block;
-}
-#uniformes:hover .conteudoDetalhe{
-	display:block;
-	width: 310px;
-	padding: 20px;
-	position: absolute;
-	bottom: 0px;
-	background-color: rgba(35,118,252,0.7);
-	font-family: 'Aldrich', sans-serif;
-	font-size: 15px;
 }
