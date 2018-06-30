@@ -57,3 +57,12 @@ section {
 	font-family: 'Audiowide', cursive;
 	color: rgb(237, 209, 2);
 }
+
+#data{
+	position: absolute;
+	left: 0px;
+	top: -42px;
+	border-radius: 10px;
+	padding: 5px 10px 15px;
+	background-color: rgb(0, 115, 204);
+}
