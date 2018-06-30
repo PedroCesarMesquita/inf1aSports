@@ -1,6 +1,12 @@
 let partidaSelecionada = 0;
 let partidas = [
 	{
+		resultado: 'INF 1A 0x5 ELE 1B',
+		campeonato: 'Copa Calouro',
+		data: '28/06',
+		gols: ['nenhum']
+	},
+	{
 		resultado: 'INF 1A 5x4 MCT 1A',
 		campeonato: 'Copa Calouro',
 		data: '21/05',
