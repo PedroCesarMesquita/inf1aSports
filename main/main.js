@@ -18,7 +18,7 @@ let noticias = [
 	}
 ];
 
-setInterval(function(){
+setInterval(function() {
 	if(tempo == 5) {
 		mudaImagem(1);
 		tempo = 0;
@@ -32,6 +32,8 @@ function mudaImagem(sentido) {
 		indice = (indice == noticias.length  - 1 ? 0 : indice + 1);
 	else
 		indice = (indice ? indice - 1 : noticias.length + 1);
+
+	tituloEl.innerText = noticias[indice].titulo;
 	noticiasEl.style.backgroundImage = 'url("' + noticias[indice].imagem + '")';
 }
 
