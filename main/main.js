@@ -1,21 +1,12 @@
 let noticiasEl = document.querySelector('#noticias');
-let tituloEl = document.querySelector('#titulo');
+let tituloEl   = document.querySelector('#titulo');
 
 let indice = 0, tempo = 0, contarTempo = true;
 
 let noticias = [
-	{
-		titulo: 'Reta Final!',
-		imagem: '../imgs/camisas_fundo.png'
-	},
-	{
-		titulo: 'Cavalo foda',
-		imagem: '../imgs/cavalo.jpg'
-	},
-	{
-		titulo: 'Nyan Cat u.u',
-		imagem: '../imgs/nyancat.jpg'
-	}
+	{ titulo: 'Reta Final!', imagem: '../imgs/camisas_fundo.png' },
+	{ titulo: 'Cavalo foda', imagem: '../imgs/cavalo.jpg' },
+	{ titulo: 'Nyan Cat u.u', imagem: '../imgs/nyancat.jpg' }
 ];
 
 setInterval(function() {
@@ -37,18 +28,11 @@ function mudaImagem(sentido) {
 	noticiasEl.style.backgroundImage = 'url("' + noticias[indice].imagem + '")';
 }
 
-noticiasEl.addEventListener("mouseover", function() {
-	contarTempo = false;
-});
-
-noticiasEl.addEventListener("mouseout", function() {
-	contarTempo = true;
-});
+noticiasEl.addEventListener("mouseover", function() { contarTempo = false; });
+noticiasEl.addEventListener("mouseout",  function() { contarTempo = true;  });
 
 let setasEl = document.querySelectorAll('.setas');
 
 for(let i = 0; i < setasEl.length; i++) {
-	setasEl[i].addEventListener('click', function() {
-		mudaImagem(i);
-	});
+	setasEl[i].addEventListener('click', function() { mudaImagem(i); });
 }
