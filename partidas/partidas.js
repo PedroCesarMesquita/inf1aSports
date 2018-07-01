@@ -4,7 +4,7 @@ let partidas = [
 		resultado: 'INF 1A 0x5 ELE 1B',
 		campeonato: 'Copa Calouro',
 		data: '28/06',
-		gols: ['nenhum']
+		gols: ['404 Not Found']
 	},
 	{
 		resultado: 'INF 1A 5x4 MCT 1A',
@@ -28,7 +28,7 @@ let partidas = [
 		resultado: 'INF 1A 0x8 ELE 1A',
 		campeonato: 'Copa Calouro',
 		data: '26/04',
-		gols: ['nenhum']
+		gols: ['404 Not Found']
 	},
 	{
 		resultado: 'INF 1A 1x10 MEC 2B',
@@ -40,7 +40,7 @@ let partidas = [
 		resultado: 'INF 1A 4x4 MEC 1A',
 		campeonato: 'Amistoso',
 		data: '23/03',
-		gols: ['num sei']
+		gols: ['404 Not Found']
 	},
 	{
 		resultado: 'INF 1A 3x2 ELT 1A',
@@ -60,6 +60,7 @@ let h3El = document.querySelector('#jogo > h3');
 let campeonatoEl = document.querySelector('#campeonato');
 let dataEl = document.querySelector('#data');
 let golsEl = document.querySelector('#gols');
+let iconeSpan = '<span><img src="../imgs/trofeu.png"></span>';
 
 let partidasEl = document.querySelectorAll('.partidas');
 
@@ -70,7 +71,7 @@ for(let i = 0; i < partidasEl.length; i++) {
 		partidasEl[partidaSelecionada = i].classList.add('partida-selecionada');
 
 		h3El.innerText = partidas[i].resultado;
-		campeonatoEl.innerText = partidas[i].campeonato;
+		campeonatoEl.innerHTML = iconeSpan + partidas[i].campeonato;
 		dataEl.innerText = partidas[i].data;
 
 		golsEl.innerHTML = partidas[i].gols[0];
