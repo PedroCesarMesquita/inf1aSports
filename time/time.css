@@ -4,6 +4,7 @@ section {
 	display: block;
 	margin: 0 auto 20px auto;
 	border-radius: 50px;
+	position: relative;
 }
 
 main {
@@ -11,8 +12,8 @@ main {
 	color: white;
 }
 
-h3 {
-	margin: 0;
+h3, h4 {
+	margin: 10px;
 }
 
 h3 > span {
@@ -22,6 +23,22 @@ h3 > span {
 #foto-jogador {
 	height: 192px;
 	border: 2px solid white;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border-radius: 50px;
+}
+
+section > p {
+	margin: 5px;
+}
+
+#overall {
+	background-color: #ff9000;
+	padding: 10px;
+	border-radius: 360px;
+	display: inline-block;
+	font-size: 20px;
 }
 
 .jogadores {
