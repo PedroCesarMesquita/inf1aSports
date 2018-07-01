@@ -22,7 +22,7 @@ function mudaImagem(sentido) {
 	if(sentido)
 		indice = (indice == noticias.length  - 1 ? 0 : indice + 1);
 	else
-		indice = (indice ? indice - 1 : noticias.length + 1);
+		indice = (indice ? indice - 1 : noticias.length - 1);
 
 	tituloEl.innerText = noticias[indice].titulo;
 	noticiasEl.style.backgroundImage = 'url("' + noticias[indice].imagem + '")';
