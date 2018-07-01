@@ -16,7 +16,7 @@ h3, h4 {
 	margin: 10px;
 }
 
-h3 > span {
+h3 > span, section span {
 	color: #ff9000;
 }
 
