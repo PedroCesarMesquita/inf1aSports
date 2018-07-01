@@ -43,4 +43,4 @@ for(let i = 0; i < setasEl.length; i++) {
 	setasEl[i].addEventListener('click', function() {
 		mudaImagem(i);
 	}
-}
+)}
