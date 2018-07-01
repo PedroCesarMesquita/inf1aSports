@@ -14,15 +14,7 @@ section>h2{
 	margin-left: 350px;/*alterar em js*/
 	font-size: 60px;
 }
-.conteudo{
-	position: absolute;
-	bottom: 0px;
-	background-color: rgba(35,118,252,0.7);
-	padding: 10px 0px;
-	font-size: 60px;
-	text-align: center;
-	font-family: 'Aldrich', sans-serif;
-}
+
 .conteudoDetalhe{
 	display:none;
 	position: absolute;
@@ -35,7 +27,16 @@ section>h2{
 }
 #noticias:hover>.setas{
 	display: inline-block;
-	background-color: rgb(180,180,180,.6);
+	position: absolute;
+	background-color: rgb(180,180,180,0.6);
 	height: 100px;
 	width: 100px;
+}
+#setaE{
+	left: 0px;
+	top: 130px;
+}
+#setaD{
+	right: 0px;
+	top: 130px;
 }
