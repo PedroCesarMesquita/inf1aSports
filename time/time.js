@@ -77,9 +77,9 @@ let jogadores = [
 let h3El = document.querySelector('h3');
 let fotoEl = document.querySelector('#foto-jogador');
 let golsEl = document.querySelector('#gols');
-let chuteEl = document.querySelector('#chute');
-let dibreEl = document.querySelector('#dibre');
-let ratariaEl = document.querySelector('#rataria');
+let chuteEl = document.querySelector('#chute > span');
+let dibreEl = document.querySelector('#dibre > span');
+let ratariaEl = document.querySelector('#rataria > span');
 let overallEl = document.querySelector('#overall');
 
 let jogadoresEl = document.querySelectorAll('.jogadores');
@@ -93,9 +93,9 @@ for(let i = 0; i < jogadoresEl.length; i++) {
 		h3El.innerHTML = jogadores[i].nome + ' <span>' + jogadores[i].num + '</span>';
 		fotoEl.src = '../imgs/' + jogadores[i].nome.toLowerCase() + '.jpg';
 		golsEl.innerText = jogadores[i].gols + (jogadores[i].gols == 1 ? ' gol' : ' gols');
-		chuteEl.innerHTML = 'Chute: ' + jogadores[i].chute;
-		dibreEl.innerHTML = 'Dibre: ' + jogadores[i].dibre;
-		ratariaEl.innerHTML = 'Rataria: ' + jogadores[i].rataria;
-		overallEl.innerHTML = parseInt((jogadores[i].chute + jogadores[i].dibre + jogadores[i].rataria) / 3);
+		chuteEl.innerText = jogadores[i].chute;
+		dibreEl.innerText = jogadores[i].dibre;
+		ratariaEl.innerText = jogadores[i].rataria;
+		overallEl.innerText = parseInt((jogadores[i].chute + jogadores[i].dibre + jogadores[i].rataria) / 3);
 	});
 }
