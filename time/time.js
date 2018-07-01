@@ -1,9 +1,9 @@
-let jogadorSelecionado = 2;
+let jogadorSelecionado = 3;
 let jogadores = [
 	{
 		nome: 'JONATA',
 		num: '1',
-		gols: 0,
+		gols: -23,
 		chute: 20,
 		dibre: 30,
 		rataria: 99
@@ -96,6 +96,6 @@ for(let i = 0; i < jogadoresEl.length; i++) {
 		chuteEl.innerHTML = 'Chute: ' + jogadores[i].chute;
 		dibreEl.innerHTML = 'Dibre: ' + jogadores[i].dibre;
 		ratariaEl.innerHTML = 'Rataria: ' + jogadores[i].rataria;
-		overallEl.innerHTML = 'Overall: ' + parseInt((jogadores[i].chute + jogadores[i].dibre + jogadores[i].rataria) / 3);
+		overallEl.innerHTML = parseInt((jogadores[i].chute + jogadores[i].dibre + jogadores[i].rataria) / 3);
 	});
 }
