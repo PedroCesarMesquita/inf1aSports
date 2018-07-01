@@ -6,7 +6,7 @@ let indice = 0, tempo = 0, contarTempo = true;
 let noticias = [
 	{ titulo: 'Reta Final!', imagem: '../imgs/camisas_fundo.png' },
 	{ titulo: 'Cavalo foda', imagem: '../imgs/cavalo.jpg' },
-	{ titulo: 'Nyan Cat u.u', imagem: '../imgs/nyancat.jpg' }
+	{ titulo: 'Fora da copa!', imagem: '../imgs/sadboys.png' }
 ];
 
 setInterval(function() {
