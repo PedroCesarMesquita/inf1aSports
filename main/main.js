@@ -1,16 +1,19 @@
 let noticiasEl=document.querySelector('#noticias');
 let indice = 0,tempo=0, contarTempo = true;
-let tituloEl = document.querySelector("#titulo");
+let tituloEl = document.querySelector('#titulo');
+
 let imagens = [
 	"../imgs/camisas_fundo.png",
 	"../imgs/cavalo.jpg",
 	"../imgs/nyancat.jpg"
 ];
+
 let titulos = [
 	"Reta Final!",
 	"Cavalo Foda",
 	"Nyan Cat Foda"
 ];
+
 setInterval(function(){
 	if(tempo == 5) {
 		mudaImagem(1);
@@ -18,9 +21,9 @@ setInterval(function(){
 	}
 	else if(contarTempo) tempo++;
 	else tempo = 0;
-},1000);
+}, 1000);
 
-function mudaImagem (sentido){
+function mudaImagem(sentido) {
 	if(sentido)
 		indice = (indice == imagens.length  - 1 ? 0 : indice + 1);
 	else
@@ -33,3 +36,11 @@ noticiasEl.addEventListener("mouseover",function() {
 noticiasEl.addEventListener("mouseout",function() {
 	contarTempo = true;
 });
+
+let setasEl = document.querySelectorAll('.setas');
+
+for(let i = 0; i < setasEl.length; i++) {
+	setasEl[i].addEventListener('click', function() {
+		mudaImagem(i);
+	}
+}
