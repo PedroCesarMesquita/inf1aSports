@@ -1,4 +1,4 @@
-#noticias{
+#noticias {
 	width: 700px;
 	height: 400px;
 	margin: 30px auto;
@@ -7,36 +7,42 @@
 	background-size: cover;
 	transition: all 1s ease;
 	position: relative;
+	cursor: pointer;
 }
-section>h2{
+
+section > h2 {
 	position: absolute;
 	bottom: 15%;
-	margin-left: 350px;/*alterar em js*/
+	margin-left: 350px;
 	font-size: 60px;
 }
 
-.conteudoDetalhe{
-	display:none;
+.conteudoDetalhe {
+	display: none;
 	position: absolute;
 	bottom: 0px;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255, 255, 255, .7);
 	font-family: 'Aldrich', sans-serif;
 }
-.setas{
+
+.setas {
 	display: none;
 }
-#noticias:hover>.setas{
+
+#noticias:hover > .setas {
 	display: inline-block;
 	position: absolute;
-	background-color: rgb(180,180,180,0.6);
+	background-color: rgba(180, 180, 180, .6);
 	height: 100px;
 	width: 100px;
 }
-#setaE{
+
+#setaE {
 	left: 0px;
 	top: 130px;
 }
-#setaD{
+
+#setaD {
 	right: 0px;
 	top: 130px;
 }
