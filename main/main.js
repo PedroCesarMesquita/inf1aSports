@@ -1,4 +1,4 @@
-let noticiasEl = document.querySelector('#noticias');
+let noticiasEl = document.querySelector('main');
 let tituloEl   = document.querySelector('#titulo');
 
 let indice = 0, tempo = 0, contarTempo = true;
