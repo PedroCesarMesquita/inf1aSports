@@ -25,8 +25,13 @@ section {
 .grupo-integrantes{
 	text-align: center;
 }
-#prof{
+#prof,#fontes{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 2px;
+}
+#fontes a{
+	display: block;
+	color: white;
+	padding: 10px;
 }
