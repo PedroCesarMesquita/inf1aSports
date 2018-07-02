@@ -1,6 +1,32 @@
 section {
 	background-color: #0073cc;
 	color: white;
-	border-radius: 50px;
+	border-radius: 10px;
 	text-align: center;
+	display:block;
+	width:500px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+.img-credito{
+	display: inline-block;
+	height: 160px;
+	width: 160px;
+}
+.facebook{
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+.integrantes{
+	display: inline-block;
+}
+.grupo-integrantes{
+	text-align: center;
+}
+#prof{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2px;
 }
