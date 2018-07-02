@@ -5,7 +5,7 @@ let indice = 0, tempo = 0, contarTempo = true;
 
 let noticias = [
 	{ titulo: 'Reta Final!', imagem: '../imgs/camisas_fundo.png' },
-	{ titulo: 'Cavalo foda', imagem: '../imgs/cavalo.jpg' },
+	{ titulo: 'Convocados por INF2', imagem: '../imgs/inf2.jpg' },
 	{ titulo: 'Fora da copa!', imagem: '../imgs/sadboys.png' }
 ];
 
