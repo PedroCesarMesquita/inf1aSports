@@ -1,0 +1,77 @@
+section {
+	background-color: #0073cc;
+	padding: 10px;
+	display: block;
+	margin: 0 auto 20px auto;
+	border-radius: 50px;
+	position: relative;
+}
+
+main {
+	text-align: center;
+	color: white;
+}
+
+h3, h4 {
+	margin: 10px;
+}
+
+h3 > span, section span {
+	color: #ff9000;
+}
+
+#foto-jogador {
+	height: 192px;
+	border: 2px solid white;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border-radius: 50px;
+}
+
+section > p {
+	margin: 5px;
+}
+
+#overall {
+	background-color: #ff9000;
+	padding: 10px;
+	border-radius: 360px;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.jogadores {
+	border: 2px solid #0073cc;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	background-color: #0073cc;
+}
+
+.jogadores > img {
+	height: 128px;
+	display: block;
+}
+
+.jogadores > p {
+	margin: 0;
+	border-top: 2px solid #0073cc;
+	padding: 5px;
+}
+
+.jogadores:hover, .jogador-selecionado {
+	border: 2px solid white;
+}
+
+.nome {
+	float: left;
+}
+
+.num {
+	float: right;
+}
+
+.num > img {
+	height: 24px;
+}
