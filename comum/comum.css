@@ -3,6 +3,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 header {
-	text-align: center;
+	/*! text-align: center; */
 	background-color: #0073cc;
 	margin: 0;
 	padding: 20px;
@@ -42,10 +43,15 @@ nav > a {
 
 nav > a:hover {
 	background-color: #ff9000;
+	color: #0073cc;
+	font-size: 17px;
+	transition: color 500ms ease;
+	transition: font-size 500ms ease;
 }
 
 .navselect {
 	background-color: #ff9000;
+	border: 1px solid #ff9000;
 }
 
 main {
@@ -59,10 +65,9 @@ h2 {
 	text-align: center;
 }
 
-header>img{
+header img{
 	opacity: 0.9;
-	position: absolute;
-	left: 39%;
-	top: -0px;
-	height: 100px;
+	height: 70px;
+	position: relative;
+	top: 20px;
 }
