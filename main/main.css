@@ -24,6 +24,7 @@ section > h2 {
 	height: 100px;
 	width: 100px;
 	transition: 0.5s ease;
+	top: 130px;
 }
 
 #noticias:hover > .setas {
@@ -37,10 +38,8 @@ section > h2 {
 
 #setaE {
 	left: 0px;
-	top: 130px;
 }
 
 #setaD {
 	right: 0px;
-	top: 130px;
 }
