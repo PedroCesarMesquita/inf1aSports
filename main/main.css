@@ -1,4 +1,4 @@
-#noticias {
+main {
 	width: 700px;
 	height: 400px;
 	margin: 30px auto;
@@ -10,7 +10,7 @@
 	cursor: pointer;
 }
 
-section > h2 {
+main > h2 {
 	position: absolute;
 	bottom: 12%;
 	left: 105px;
@@ -27,7 +27,7 @@ section > h2 {
 	top: 130px;
 }
 
-#noticias:hover > .setas {
+main:hover > .setas {
 	opacity: 1;
 	position: absolute;
 	background-color: rgba(180, 180, 180, .6);
