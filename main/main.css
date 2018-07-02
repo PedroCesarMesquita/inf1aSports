@@ -20,7 +20,6 @@ main > h2 {
 .setas {
 	opacity: 0;
 	position: absolute;
-	background-color: rgba(180, 180, 180, .6);
 	height: 100px;
 	width: 100px;
 	transition: 0.5s ease;
@@ -30,7 +29,6 @@ main > h2 {
 main:hover > .setas {
 	opacity: 1;
 	position: absolute;
-	background-color: rgba(180, 180, 180, .6);
 	height: 100px;
 	width: 100px;
 	transition: 0.5s ease;
