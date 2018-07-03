@@ -1,0 +1,18 @@
+section {
+	background-color: #0073cc;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	display:block;
+	width:600px;
+  height:380px;
+  margin-right: auto;
+  margin-left: auto;
+	margin-bottom: 15px;
+}
+iframe{
+  padding: 2px;
+}
+h3{
+  padding-top: 2px;
+}
