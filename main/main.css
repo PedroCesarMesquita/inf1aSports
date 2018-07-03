@@ -7,7 +7,6 @@ main {
 	background-size: cover;
 	transition: all 1s ease;
 	position: relative;
-	cursor: pointer;
 }
 
 main > h2 {
@@ -15,8 +14,12 @@ main > h2 {
 	bottom: 12%;
 	left: 105px;
 	font-size: 50px;
+	color: white;
 }
-
+#link{
+	text-decoration: none;
+	color: white;
+}
 .setas {
 	opacity: 0;
 	position: absolute;
@@ -24,6 +27,7 @@ main > h2 {
 	width: 100px;
 	transition: 0.5s ease;
 	top: 130px;
+	cursor: pointer;
 }
 
 main:hover > .setas {

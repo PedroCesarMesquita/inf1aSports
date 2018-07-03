@@ -1,12 +1,29 @@
 let noticiasEl = document.querySelector('main');
 let tituloEl   = document.querySelector('#titulo');
+let linkEl = document.querySelector('#link');
 
 let indice = 0, tempo = 0, contarTempo = true;
 
 let noticias = [
-	{ titulo: 'Reta Final!', imagem: '../imgs/camisas_fundo.png' },
-	{ titulo: 'Convocados por INF2', imagem: '../imgs/inf2.jpg' },
-	{ titulo: 'Fora da copa!', imagem: '../imgs/sadboys.png' }
+	{
+	titulo: 'Reta Final!',
+	imagem: '../imgs/camisas_fundo.png',
+	endereço: '../noticia-final/index.html'
+	},
+	{
+	titulo: 'Convocados por INF2',
+	imagem: '../imgs/inf2.jpg',
+	endereço: '../noticia-inf2/index.html'
+	},
+	{
+	titulo: 'Fora da copa!',
+	imagem: '../imgs/sadboys.png',
+	endereço: '../noticia-foradacopa/index.html'
+	},
+	{
+	titulo: 'Resenha CEFET-MG',
+	imagem: '../imgs/campo.png',
+	endereço: '../noticia-video/index.html'}
 ];
 
 setInterval(function() {
@@ -24,7 +41,7 @@ function mudaImagem(sentido) {
 	else
 		indice = (indice ? indice - 1 : noticias.length - 1);
 
-	tituloEl.innerText = noticias[indice].titulo;
+	tituloEl.innerHTML = '<a href="'+noticias[indice].endereço+'" id="link">'+noticias[indice].titulo;
 	noticiasEl.style.backgroundImage = 'url("' + noticias[indice].imagem + '")';
 }
 
