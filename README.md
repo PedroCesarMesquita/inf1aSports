@@ -11,4 +11,4 @@ Site desenvolvido em 2018, para a disciplina de Programação Web, do curso de I
 * Guilherme Yago
 
 # Professor
-Daniel Hasan Dalip
+* Daniel Hasan Dalip
