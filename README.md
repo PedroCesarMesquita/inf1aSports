@@ -1,14 +1,12 @@
-# inf1aSports
-
-[Acessar](https://pedrocesarmesquita.github.io/inf1aSports/main/index.html)
+# INF 1A Sports
 
 Site desenvolvido em 2018, para a disciplina de Programação Web, do curso de Informática do CEFET-MG
 
 # Desenvolvedores
-* [Pedro César](https://github.com/PedroCesarMesquita)
+* [Pedro César](https://github.com/pcesarmf)
 * [Jônata Novais](https://github.com/Jonatanc05)
 * [Wagner Alexsander](https://github.com/WagnerACV)
-* Guilherme Yago
+* [Guilherme Yago](https://github.com/GuiYago2015)
 
 # Professor
-* Daniel Hasan Dalip
+* [Daniel Hasan Dalip](https://github.com/daniel-hasan)
